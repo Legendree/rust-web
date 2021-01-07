@@ -19,9 +19,9 @@ export const App = () => {
         <div className='video_container'>
           <video
             preload='auto'
-            muted
-            autoPlay
-            loop
+            autoPlay='autoplay'
+            muted='muted'
+            loop='loop'
             playsInline
             className='video_bg'
           >
