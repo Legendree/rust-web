@@ -18,7 +18,10 @@ export const App = () => {
       <div className='main_container noisy'>
         <div className='video_container'>
           <video muted loop autoPlay className='video_bg'>
-            <source src='/bg.mp4' type='video/mp4' />
+            <source
+              src='https://files.facepunch.com/paddy/20190514/rust_bgvideo_website_003_noaudio.mp4'
+              type='video/mp4'
+            />
           </video>
         </div>
         <Header />
