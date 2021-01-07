@@ -56,6 +56,15 @@ export const App = () => {
                   >
                     Season's Beatings!
                   </span>
+                  <div className='post_type'>
+                    <span className='post_tag'>DEVBLOG</span>
+                    <span className='post_date'>
+                      Thursday, December 17, 2020
+                    </span>
+                  </div>
+                  <span>It's the most wonderful time of the year!</span>
+
+                  <button className='post_btn'>READ MORE</button>
                 </div>
               </div>
             </div>
