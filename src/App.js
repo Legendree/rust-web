@@ -16,13 +16,28 @@ export const App = () => {
   const videoRef = React.useRef(null);
 
   React.useEffect(() => {
-    videoRef.current.play();
-  }, []);
+    const player = videoRef.current;
+
+    player.controls = false;
+    player.muted = true;
+    player.setAttribute('muted', ''); // just in case
+    player.autoplay = true;
+    player.setAttribute('playsinline', 'true');
+    player.setAttribute('crossorigin', 'true');
+  });
+
   return (
     <div className='web_container'>
       <div className='main_container noisy'>
         <div className='video_container'>
-          <video ref={videoRef} muted loop playsInline className='video_bg'>
+          <video
+            ref={videoRef}
+            muted
+            autoPlay
+            loop
+            playsInline
+            className='video_bg'
+          >
             <source src='/bg.mp4' type='video/mp4' />
           </video>
         </div>
