@@ -41,6 +41,14 @@
   background-size: cover;
 }
 
+.latest_content {
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  flex-direction: column;
+  width: 1150px;
+}
+
 .latest_background {
   display: flex;
   top: 10px;
@@ -198,15 +206,6 @@
   }
 }
 
-.latest_content {
-  display: flex;
-  z-index: 2;
-  justify-content: center;
-
-  flex-direction: column;
-  width: 1150px;
-}
-
 .latest_post_title {
   display: flex;
   align-items: center;
@@ -261,6 +260,7 @@
   color: #c5c6c5;
   font-size: 16px;
   font-weight: 300;
+  z-index: 2;
 }
 
 .post_type {
@@ -290,10 +290,192 @@
   justify-content: center;
   border: none;
   background-color: #c2402b;
-
   color: white;
   font-size: 14px;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   margin-top: 25px;
+}
+
+.post_btn:hover {
+  cursor: pointer;
+}
+
+.post_btn:focus {
+  outline: none;
+}
+
+.phone_container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  background-image: url('https://files.facepunch.com/lewis/1b2911b1/Rust%20Companion%20v3_phones_endframe_1_2020-05-29_18.29%201.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.phone_content {
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  flex-direction: column;
+  width: 1150px;
+}
+
+.app_details {
+  width: 470px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #8a8881;
+}
+
+.phone_btn {
+  align-self: flex-start;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: #c2402b;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 25px;
+}
+
+.phone_btn:hover {
+  cursor: pointer;
+}
+
+.phone_btn:focus {
+  outline: none;
+}
+
+.more_info_container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 31, 31);
+}
+
+.more_info_content {
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+
+  width: 1150px;
+}
+
+.block_container {
+  color: #f6eae1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 565px;
+  height: 500px;
+  background: rgb(52, 59, 59);
+  background: linear-gradient(
+    180deg,
+    rgba(50, 63, 62, 0.2) 0%,
+    rgba(43, 43, 43, 0) 100%
+  );
+}
+
+.block_title {
+  margin-top: 30px;
+  color: #f6eae1;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.block_text {
+  margin-top: 30px;
+  text-align: center;
+  width: 400px;
+  color: #e3d8cf;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.updates_container {
+  display: flex;
+  height: 660px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 19, 19);
+}
+
+.updates_content {
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1150px;
+}
+
+.update_blocks {
+  margin-top: 25px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.update_block {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.update_block_img {
+  height: 245px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.update_title {
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 24px;
+  color: #ca3f2a;
+}
+
+.update_title:hover {
+  color: #df4730;
+}
+
+.update_bottom {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.update_date {
+  display: flex;
+  align-items: center;
+  color: #5a5654;
+}
+
+.update_tag {
+  background-color: #ca3f2a;
+  font-weight: 600;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.date_text {
+  font-size: 13px;
 }

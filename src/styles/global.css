@@ -33,6 +33,7 @@ input[type='button'] {
 }
 
 .noisy-absolute {
+  z-index: 1;
   display: flex;
   top: 0;
   bottom: 0;
