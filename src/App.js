@@ -13,6 +13,28 @@ import { Logo } from './vectors/Logo';
 import { Face } from './vectors/Face';
 
 export const App = () => {
+  const videoRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const player = videoRef.current;
+
+    player.controls = false;
+    player.muted = true;
+    player.setAttribute('muted', ''); // just in case
+    player.autoplay = true;
+    player.setAttribute('playsinline', 'true');
+    player.setAttribute('crossorigin', 'true');
+
+    setTimeout(() => {
+      // player.play() might return a promise but it's not guaranteed crossbrowser.
+      const promise = player.play();
+      // let's play safe to ensure that if we do have a promise
+      if (promise.then) {
+        promise.then(() => {}).catch(() => {});
+      }
+    }, 0);
+  }, []);
+
   return (
     <div className='web_container'>
       <div className='main_container noisy'>
