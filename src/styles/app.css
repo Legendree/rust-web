@@ -556,9 +556,6 @@
   box-shadow: 0px 0px 5px 0px #cd412b;
 }
 
-.mailing_input::placeholder {
-}
-
 .footer_container {
   display: flex;
   height: 425px;
