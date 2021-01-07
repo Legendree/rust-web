@@ -13,12 +13,6 @@ import { Logo } from './vectors/Logo';
 import { Face } from './vectors/Face';
 
 export const App = () => {
-  const videoRef = React.useRef(null);
-
-  React.useEffect(() => {
-    videoRef.current.play();
-  }, []);
-
   return (
     <div className='web_container'>
       <div className='main_container noisy'>
@@ -30,14 +24,13 @@ export const App = () => {
             loop
             playsInline
             className='video_bg'
-            ref={videoRef}
           >
             <source
-              src='https://rust-web.vercel.app//assets/bg.mp4'
+              src='https://rust-web.vercel.app/assets/bg.mp4'
               type='video/mp4'
             />
             <source
-              src='https://rust-web.vercel.app//assets/bg.webm'
+              src='https://rust-web.vercel.app/assets/bg.webm'
               type='video/webm'
             />
             <span>Your browser doesn't support mp4/webm formats :(</span>
