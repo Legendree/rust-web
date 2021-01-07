@@ -29,7 +29,7 @@ input[type='button'] {
 }
 
 .noisy {
-  background-image: url(http://api.thumbr.it/whitenoise-250x250.png?background=00000000&noise=ffffff&density=45&opacity=4);
+  background-image: url(/src/textures/whitenoise-250x250.png);
 }
 
 .noisy-absolute {
@@ -40,7 +40,7 @@ input[type='button'] {
   left: 0;
   right: 0;
   position: absolute;
-  background-image: url(http://api.thumbr.it/whitenoise-250x250.png?background=00000000&noise=ffffff&density=45&opacity=4);
+  background-image: url(/src/textures/whitenoise-250x250.png);
 }
 
 .gradient-absolute {
