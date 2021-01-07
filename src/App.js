@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './components/Header';
 
 import './styles/app.css';
+import { Post } from './vectors/Post';
 import { Steam } from './vectors/Steam';
 
 export const App = () => {
@@ -33,7 +34,33 @@ export const App = () => {
         </div>
       </div>
       <div className='latest_container'>
-        <div className='gradient-absolute noisy' />
+        <div className='latest_background' />
+        <div className='gradient-absolute' />
+        <div className='noisy-absolute ' />
+        <div className='latest_content'>
+          <div className='latest_post_title'>
+            <div
+              style={{ width: 24, height: 24, marginRight: 8, marginTop: 5 }}
+            >
+              <Post />
+            </div>
+            <span style={{ fontWeight: '800', fontSize: 24 }}>Latest Post</span>
+          </div>
+          <div className='post_container'>
+            <div className='post_info'>
+              <div className='noisy-absolute ' />
+              <div className='post_details'>
+                <div className='post_details_container'>
+                  <span
+                    style={{ fontSize: 30, fontWeight: '800', color: 'white' }}
+                  >
+                    Season's Beatings!
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
