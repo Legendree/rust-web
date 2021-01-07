@@ -24,7 +24,16 @@ export const App = () => {
     player.autoplay = true;
     player.setAttribute('playsinline', 'true');
     player.setAttribute('crossorigin', 'true');
-  });
+
+    setTimeout(() => {
+      // player.play() might return a promise but it's not guaranteed crossbrowser.
+      const promise = player.play();
+      // let's play safe to ensure that if we do have a promise
+      if (promise.then) {
+        promise.then(() => {}).catch(() => {});
+      }
+    }, 0);
+  }, []);
 
   return (
     <div className='web_container'>
