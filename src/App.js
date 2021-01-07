@@ -48,8 +48,8 @@ export const App = () => {
             className='video_bg'
             ref={videoRef}
           >
-            <source src='/bg.mp4' type='video/mp4' />
-            <source src='/bg.webm' type='video/webm' />
+            <source src='/assets/bg.mp4' type='video/mp4' />
+            <source src='/assets/bg.webm' type='video/webm' />
             <span>Your browser doesn't support mp4/webm formats :(</span>
           </video>
         </div>
