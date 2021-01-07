@@ -46,6 +46,7 @@ export const App = () => {
             loop
             playsInline
             className='video_bg'
+            ref={videoRef}
           >
             <source src='/bg.mp4' type='video/mp4' />
             <source src='/bg.webm' type='video/webm' />
