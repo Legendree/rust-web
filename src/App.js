@@ -30,11 +30,16 @@ export const App = () => {
             loop
             playsInline
             className='video_bg'
-            controls
             ref={videoRef}
           >
-            <source src='/assets/bg.mp4' type='video/mp4' />
-            <source src='/assets/bg.webm' type='video/webm' />
+            <source
+              src='https://rust-web.vercel.app//assets/bg.mp4'
+              type='video/mp4'
+            />
+            <source
+              src='https://rust-web.vercel.app//assets/bg.webm'
+              type='video/webm'
+            />
             <span>Your browser doesn't support mp4/webm formats :(</span>
           </video>
         </div>
