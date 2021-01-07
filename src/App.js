@@ -13,11 +13,16 @@ import { Logo } from './vectors/Logo';
 import { Face } from './vectors/Face';
 
 export const App = () => {
+  const videoRef = React.useRef(null);
+
+  React.useEffect(() => {
+    videoRef.current.play();
+  }, []);
   return (
     <div className='web_container'>
       <div className='main_container noisy'>
         <div className='video_container'>
-          <video muted loop autoPlay playsInline className='video_bg'>
+          <video ref={videoRef} muted loop playsInline className='video_bg'>
             <source src='/bg.mp4' type='video/mp4' />
           </video>
         </div>
