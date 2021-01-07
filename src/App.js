@@ -18,13 +18,15 @@ export const App = () => {
       <div className='main_container noisy'>
         <div className='video_container'>
           <video
-            muted={true}
-            autoPlay={true}
-            loop={true}
+            preload='auto'
+            muted
+            autoPlay
+            loop
             playsInline
             className='video_bg'
           >
             <source src='/bg.mp4' type='video/mp4' />
+            <source src='/bg.webm' type='video/webm' />
           </video>
         </div>
         <Header />
