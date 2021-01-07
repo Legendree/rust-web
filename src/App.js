@@ -30,6 +30,7 @@ export const App = () => {
             loop
             playsInline
             className='video_bg'
+            controls
             ref={videoRef}
           >
             <source src='/assets/bg.mp4' type='video/mp4' />
