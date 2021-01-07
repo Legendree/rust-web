@@ -1,11 +1,16 @@
 import React from 'react';
 import { Header } from './components/Header';
+import { CustomInput } from './components/CustomInput';
 
 import './styles/app.css';
 import { Date } from './vectors/Date';
 
 import { Post } from './vectors/Post';
 import { Steam } from './vectors/Steam';
+import { Person } from './vectors/Person';
+import { Mail } from './vectors/Mail';
+import { Logo } from './vectors/Logo';
+import { Face } from './vectors/Face';
 
 export const App = () => {
   return (
@@ -228,6 +233,244 @@ export const App = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className='mailing_container'>
+        <div className='mailing_background' />
+        <div className='noisy-absolute ' />
+        <div className='mailing_content'>
+          <div className='left_mailing'>
+            <span
+              style={{ fontSize: 30, color: '#F6EAE2', fontWeight: 'bold' }}
+            >
+              Mailing List
+            </span>
+            <p
+              style={{
+                color: '#f6eae1',
+                width: 540,
+                marginTop: 20,
+                fontSize: 16,
+              }}
+            >
+              If you want to follow this project you can sign up to the mailing
+              list.
+            </p>
+
+            <p
+              style={{
+                color: '#f6eae1',
+                width: 550,
+                marginTop: 20,
+                fontSize: 16,
+                lineHeight: '22px',
+              }}
+            >
+              We'll only update you about this project, we won't spam you about
+              other stuff or sell your email address.
+            </p>
+          </div>
+          <div className='right_mailing'>
+            <CustomInput svg={<Mail />} marginTop={2} placeholder='Email' />
+            <div style={{ display: 'flex', marginTop: 10 }}>
+              <CustomInput svg={<Person />} placeholder='First Name' />
+              <div style={{ width: 20 }} />
+              <CustomInput svg={<Person />} placeholder='Last Name' />
+            </div>
+            <div
+              style={{ display: 'flex', marginTop: 30, alignItems: 'center' }}
+            >
+              <input type='checkbox' />
+              <span>
+                I Agree to the{' '}
+                <a
+                  href='#terms'
+                  style={{ textDecoration: 'underline', color: '#D76250' }}
+                >
+                  Terms Of Service
+                </a>{' '}
+                and{' '}
+                <a
+                  href='#terms'
+                  style={{ textDecoration: 'underline', color: '#D76250' }}
+                >
+                  Privacy Policy
+                </a>
+              </span>
+            </div>
+            <button className='phone_btn'>SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+      <div className='footer_container'>
+        <div className='noisy-absolute' />
+        <div className='footer_content'>
+          <div className='footer_block_left'>
+            <div
+              style={{
+                display: 'flex',
+                width: '100%',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+              }}
+            >
+              <div style={{ width: 140 }}>
+                <Logo />
+              </div>
+              <div
+                style={{
+                  height: '100%',
+                  width: 2,
+                  backgroundColor: '#313131',
+                }}
+              />
+              <div style={{ width: 35, height: 35 }}>
+                <Face />
+              </div>
+            </div>
+            <span
+              style={{
+                width: 210,
+                marginTop: 25,
+                fontSize: 16,
+                color: '#7B7471',
+                lineHeight: '22px',
+                fontWeight: 'lighter',
+              }}
+            >
+              © 2021 Facepunch Studios. All rights reserved.
+            </span>
+          </div>
+          <div className='footer_block'>
+            <span
+              style={{
+                fontSize: 12,
+                color: 'gray',
+                fontWeight: 600,
+                letterSpacing: 2,
+                marginBottom: 15,
+              }}
+            >
+              HERE
+            </span>
+            <ul style={{ color: 'white', fontSize: 16 }}>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Blog
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Rust+
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Merch
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Console
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Changelist
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Suggestions
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className='footer_block'>
+            <span
+              style={{
+                fontSize: 12,
+                color: 'gray',
+                fontWeight: 600,
+                letterSpacing: 2,
+                marginBottom: 15,
+              }}
+            >
+              MISC
+            </span>
+            <ul style={{ color: 'white', fontSize: 16 }}>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Aboust Us
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Our Projects
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Press Kits
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Blog RSS
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Commits
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Legal
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className='footer_block'>
+            <span
+              style={{
+                fontSize: 12,
+                color: 'gray',
+                fontWeight: 600,
+                letterSpacing: 2,
+                marginBottom: 15,
+              }}
+            >
+              SOCIAL{' '}
+            </span>
+            <ul style={{ color: 'white', fontSize: 16 }}>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Twitter
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Steam
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Facebook
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  Instagram
+                </a>
+              </li>
+              <li style={{ marginTop: 25 }}>
+                <a className='menu_link' href='#menu'>
+                  YouTube
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

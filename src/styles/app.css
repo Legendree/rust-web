@@ -479,3 +479,122 @@
 .date_text {
   font-size: 13px;
 }
+
+.mailing_container {
+  display: flex;
+  height: 530px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://files.facepunch.com/lewis/1b0211b1/rust-newsletter.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.mailing_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgb(26, 22, 42);
+  background: linear-gradient(
+    180deg,
+    rgba(26, 22, 42, 0.7511379551820728) 0%,
+    rgba(9, 9, 9, 0.8995973389355743) 100%
+  );
+}
+
+.mailing_content {
+  display: flex;
+  z-index: 2;
+
+  justify-content: space-between;
+  width: 1150px;
+}
+
+.left_mailing {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.right_mailing {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mailing_input_container {
+  position: relative;
+  height: 44px;
+  display: flex;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+}
+
+.mailing_input {
+  z-index: 2;
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  color: #c1b8b0;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 45px;
+  border: 2px solid rgb(49, 49, 49);
+}
+
+.mailing_input:focus {
+  outline: none;
+  border-color: #cd412b;
+  -webkit-box-shadow: 0px 0px 5px 0px #cd412b;
+  -moz-box-shadow: 0px 0px 5px 0px #cd412b;
+  box-shadow: 0px 0px 5px 0px #cd412b;
+}
+
+.mailing_input::placeholder {
+}
+
+.footer_container {
+  display: flex;
+  height: 425px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 19, 19);
+}
+
+.footer_content {
+  display: flex;
+  z-index: 2;
+
+  justify-content: space-between;
+  width: 1150px;
+}
+
+.footer_block_left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_block {
+  display: flex;
+  flex: 1;
+  margin: 0px 15px;
+  flex-direction: column;
+}
+
+.menu_link {
+  text-decoration: none;
+}
+
+.menu_link:hover {
+  text-decoration: underline;
+}
