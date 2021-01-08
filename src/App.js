@@ -12,33 +12,26 @@ import { Mail } from './vectors/Mail';
 import { Logo } from './vectors/Logo';
 import { Face } from './vectors/Face';
 
-import video_mp4 from './assets/bg.mp4';
+import mp4 from './assets/bg.mp4';
+import webm from './assets/bg.webm';
 
 export const App = () => {
-  var EmbedVideo = () => {
-    return (
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `
-         <video
-           loop
-           muted
-           autoplay
-           playsinline
-           src="${video_mp4}"
-           class="video_bg"
-         />,
-       `,
-        }}
-      />
-    );
-  };
-
   return (
     <div className='web_container'>
       <div className='main_container noisy'>
         <div className='video_container'>
-          <EmbedVideo />
+          <video
+            preload='auto'
+            autoPlay
+            muted
+            loop
+            playsInline
+            className='video_bg'
+          >
+            <source src={mp4} type='video/mp4' />
+            <source src={webm} type='video/webm' />
+            <span>Your browser doesn't support mp4/webm formats :(</span>
+          </video>
         </div>
         <Header />
         <div className='info_container'>

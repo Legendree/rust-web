@@ -1,6 +1,8 @@
 import React from 'react';
 
-export const CustomInput = ({ placeholder, svg, color, marginTop = 0 }) => {
+export const CustomInput = ({ placeholder, svg, marginTop = 0 }) => {
+  const [focused, setFocused] = React.useState(false);
+
   return (
     <div className='mailing_input_container'>
       <div className='noisy-absolute' />
@@ -20,15 +22,21 @@ export const CustomInput = ({ placeholder, svg, color, marginTop = 0 }) => {
             width: 16,
             height: 16,
             marginLeft: 15,
-            color: color,
             marginTop: marginTop,
             zIndex: 3,
+            color: `${focused ? '#C1B8B0' : 'gray'}`,
           }}
         >
           {svg}
         </div>
       </div>
-      <input type='text' className='mailing_input' placeholder={placeholder} />
+      <input
+        onFocus={() => setFocused(true)}
+        onBlur={() => setFocused(false)}
+        type='text'
+        className='mailing_input'
+        placeholder={placeholder}
+      />
     </div>
   );
 };
