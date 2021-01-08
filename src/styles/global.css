@@ -6,17 +6,6 @@ body {
   font-size: 14px;
 }
 
-::-moz-selection {
-  /* Code for Firefox */
-  color: white;
-  background: #ff008b;
-}
-
-::selection {
-  color: white;
-  background: #ff008b;
-}
-
 b {
   font-weight: bold;
 }
@@ -29,7 +18,7 @@ input[type='button'] {
 }
 
 .noisy {
-  background-image: url(/src/textures/whitenoise-250x250.png);
+  background-image: url(/src/textures/noise.png);
 }
 
 .noisy-absolute {
@@ -40,7 +29,7 @@ input[type='button'] {
   left: 0;
   right: 0;
   position: absolute;
-  background-image: url(/src/textures/whitenoise-250x250.png);
+  background-image: url(/src/textures/noise.png);
 }
 
 .gradient-absolute {

@@ -25,14 +25,8 @@ export const App = () => {
             playsInline
             className='video_bg'
           >
-            <source
-              src='https://rust-web.vercel.app/assets/bg.mp4'
-              type='video/mp4'
-            />
-            <source
-              src='https://rust-web.vercel.app/assets/bg.webm'
-              type='video/webm'
-            />
+            <source src='/assets/bg.mp4' type='video/mp4' />
+            <source src='/assets/bg.webm' type='video/webm' />
             <span>Your browser doesn't support mp4/webm formats :(</span>
           </video>
         </div>
@@ -76,15 +70,18 @@ export const App = () => {
                   <span
                     style={{ fontSize: 30, fontWeight: '800', color: 'white' }}
                   >
-                    Season's Beatings!
+                    January Update
                   </span>
                   <div className='post_type'>
                     <span className='post_tag'>DEVBLOG</span>
-                    <span className='post_date'>
-                      Thursday, December 17, 2020
-                    </span>
+                    <span className='post_date'>Thursday, January 7, 2021</span>
                   </div>
-                  <span>It's the most wonderful time of the year!</span>
+                  <p style={{ lineHeight: '22px' }}>
+                    Santa is packing up and clearing out the bodies, we hope you
+                    enjoyed the Holiday Season. We're getting back to work after
+                    a couple of weeks off which is why this is a light blog and
+                    we are looking forward to the journey ahead in 2021!
+                  </p>
 
                   <button className='post_btn'>READ MORE</button>
                 </div>

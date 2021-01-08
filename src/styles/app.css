@@ -37,7 +37,7 @@
   width: 100%;
   position: relative;
   justify-content: center;
-  background-image: url('https://files.facepunch.com/s/265da1b6c966.jpg');
+  background-image: url('https://files.facepunch.com/s/bf65b903c08f.jpg');
   background-size: cover;
 }
 
@@ -56,7 +56,7 @@
   left: 0;
   right: 0;
   position: absolute;
-  background-image: url('https://files.facepunch.com/s/265da1b6c966.jpg');
+  background-image: url('https://files.facepunch.com/s/bf65b903c08f.jpg');
   background-size: cover;
   /* Add the blur effect */
   filter: blur(6px);
@@ -218,7 +218,7 @@
   margin-top: 35px;
   height: 500px;
   width: 100%;
-  background-image: url('https://files.facepunch.com/s/265da1b6c966.jpg');
+  background-image: url('https://files.facepunch.com/s/bf65b903c08f.jpg');
   background-position: center;
   border-top-left-radius: 5px;
   border-radius: 5px;
@@ -243,8 +243,8 @@
   background: rgb(47, 47, 47);
   background: linear-gradient(
     180deg,
-    rgba(77, 77, 77, 0.732) 0%,
-    rgb(20, 20, 20) 100%
+    rgba(20, 20, 20, 0.6) 0%,
+    rgba(20, 20, 20, 1) 100%
   );
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -443,6 +443,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .update_title {
