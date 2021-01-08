@@ -16,20 +16,33 @@ import mp4 from './assets/bg.mp4';
 import webm from './assets/bg.webm';
 
 export const App = () => {
+  const videoRef = React.useRef(null);
+
+  // Added this effect to try and fix the bug but it doesn't help
+  React.useEffect(() => {
+    const player = videoRef.current;
+    player.controls = false;
+    player.muted = true;
+    player.setAttribute('muted', ''); // just in case
+    player.autoplay = true;
+    player.setAttribute('playsinline', '');
+    player.play();
+  }, []);
+
   return (
     <div className='web_container'>
       <div className='main_container noisy'>
         <div className='video_container'>
           <video
-            preload='auto'
-            autoPlay
-            muted
+            ref={videoRef}
             loop
+            muted
+            autoPlay
             playsInline
             className='video_bg'
           >
-            <source src={mp4} type='video/mp4' />
-            <source src={webm} type='video/webm' />
+            <source type='video/mp4' src={mp4} />
+            <source type='video/webm' src={webm} />
             <span>Your browser doesn't support mp4/webm formats :(</span>
           </video>
         </div>
@@ -492,20 +505,3 @@ export const App = () => {
     </div>
   );
 };
-
-/*
-
- <video
-            preload='auto'
-            autoPlay
-            muted
-            loop
-            playsInline
-            className='video_bg'
-          >
-            <source src='/assets/bg.mp4' type='video/mp4' />
-            <source src='/assets/bg.webm' type='video/webm' />
-            <span>Your browser doesn't support mp4/webm formats :(</span>
-          </video>
-
-          */
